@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorías de Inglés | Lo Miranda</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="comunidad.css">
+    <link rel="stylesheet" href="comunidad.js">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand bg-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Tutorías de Inglés Lo Miranda</a>
+    <div class="nav-overflow" data-bs-toggle="nav-overflow">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="sobre-mi.html">Sobre Mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="clases-y-niveles.html">Clases y Niveles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="precios.html">Precios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comunidad.html">Comunidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- COMUNIDAD -->
+<section class="comunidad" id="comunidad">
+
+    <div class="comunidad-encabezado">
+        <span class="comunidad-etiqueta">୨୧ NUESTRO RINCÓN ୨୧</span>
+
+        <h2>♡ Nuestra comunidad ♡</h2>
+
+        <p>
+            ¡Cada pequeño avance merece celebrarse! 🌷
+        </p>
+
+        <p class="comunidad-intro">
+            Este es un espacio para compartir experiencias,
+            dejar palabras bonitas y contar cómo ha sido tu
+            camino aprendiendo inglés.
+            <strong>Tu opinión importa y puedes compartirla de forma anónima.</strong>
+        </p>
+
+        <div class="comunidad-decoracion">
+            🐱 ♡ ✧ 📚 ✧ ♡ 🐱
+        </div>
+    </div>
+
+    <!-- RESUMEN DE OPINIONES -->
+    <div class="comunidad-resumen">
+
+        <div class="resumen-gatito">🐱</div>
+
+        <h3>El mural de nuestra comunidad</h3>
+
+        <p>
+            Un rinconcito para leer experiencias,
+            celebrar progresos y ayudarnos a mejorar.
+        </p>
+
+        <div class="comunidad-estadisticas">
+            <div class="estadistica">
+                <span id="total-opiniones">0</span>
+                <small>opiniones</small>
+            </div>
+
+            <div class="estadistica">
+                <span id="promedio-estrellas">—</span>
+                <small>promedio ★</small>
+            </div>
+        </div>
+
+        <p class="comunidad-privacidad">
+            🎀 No necesitas escribir tu nombre ni tu correo.
+        </p>
+
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="opinion-formulario">
+
+        <div class="formulario-titulo">
+            <span>💌</span>
+            <div>
+                <h3>¡Deja tu opinión!</h3>
+                <p>Tu experiencia puede animar a otra persona.</p>
+            </div>
+        </div>
+
+        <form id="form-opinion">
+
+            <label class="etiqueta-campo">
+                ¿Cómo calificarías tu experiencia?
+            </label>
+
+            <div class="selector-estrellas"
+                 role="radiogroup"
+                 aria-label="Calificación de 0 a 5 estrellas">
+
+                <button type="button" class="estrella"
+                    data-valor="0" aria-pressed="true"
+                    aria-label="0 estrellas">0</button>
+
+                <button type="button" class="estrella"
+                    data-valor="1" aria-pressed="false"
+                    aria-label="1 estrella">★</button>
+
+                <button type="button" class="estrella"
+                    data-valor="2" aria-pressed="false"
+                    aria-label="2 estrellas">★</button>
+
+                <button type="button" class="estrella"
+                    data-valor="3" aria-pressed="false"
+                    aria-label="3 estrellas">★</button>
+
+                <button type="button" class="estrella"
+                    data-valor="4" aria-pressed="false"
+                    aria-label="4 estrellas">★</button>
+
+                <button type="button" class="estrella"
+                    data-valor="5" aria-pressed="false"
+                    aria-label="5 estrellas">★</button>
+
+            </div>
+
+            <p id="texto-calificacion" class="texto-calificacion">
+                Aún no has seleccionado una calificación ♡
+            </p>
+
+            <label for="opinion-texto" class="etiqueta-campo">
+                Cuéntanos tu experiencia ♡
+            </label>
+
+            <textarea
+                id="opinion-texto"
+                maxlength="500"
+                placeholder="¿Qué te ha gustado? ¿Qué has aprendido? ¿Qué podríamos mejorar? 🌷"
+                required
+            ></textarea>
+
+            <div class="contador-caracteres">
+                <span>Tu opinión puede tener hasta 500 caracteres.</span>
+                <span id="contador-opinion">0/500</span>
+            </div>
+
+            <label class="casilla-anonima">
+                <input type="checkbox" id="confirmar-anonimato" required>
+                <span>
+                    Confirmo que no he incluido datos personales
+                    en mi opinión.
+                </span>
+            </label>
+
+            <button type="submit" class="boton-publicar">
+                Publicar mi opinión ♡
+            </button>
+
+            <p id="mensaje-opinion"
+               class="mensaje-opinion"
+               aria-live="polite"></p>
+
+            <p class="nota-comunidad">
+                ♡ Las opiniones son anónimas. Evita incluir nombres,
+                teléfonos u otros datos personales.
+            </p>
+
+        </form>
+    </div>
+
+    <!-- OPINIONES PUBLICADAS -->
+    <div class="mural-opiniones">
+
+        <div class="mural-titulo">
+            <h3>♡ Palabras de la comunidad</h3>
+            <p>Pequeñas experiencias, grandes aprendizajes. ✨</p>
+        </div>
+
+        <div id="lista-opiniones" class="lista-opiniones">
+
+            <div class="opiniones-vacias" id="opiniones-vacias">
+                <span>🐾</span>
+                <h4>¡Este mural está esperando su primera opinión!</h4>
+                <p>
+                    ¿Te animas a ser la primera persona en compartir
+                    su experiencia?
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="comunidad-pie">
+        <span>🎀</span>
+        <p>
+            Every little step counts.
+            <br>
+            <strong>Cada pequeño paso cuenta. ♡</strong>
+        </p>
+        <span>🎀</span>
+    </div>
+
+</section>
+
+
+<script type="module" 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" 
+crossorigin="anonymous"></script>
+
+<script src="comunidad.js" defer></script>
+
+</body>
+</html>

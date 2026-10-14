@@ -1,0 +1,483 @@
+
+/* ==================================
+   SECCIÓN COMPLETA DE CONTACTO
+================================== */
+
+.seccion-contacto {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 35px 24px;
+
+    background: linear-gradient(
+        180deg,
+        #fff8fb 0%,
+        #ffffff 55%,
+        #fff5f9 100%
+    );
+
+    border: 1px solid #f5dce7;
+    border-radius: 25px;
+
+    color: #493440;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.contacto-encabezado {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.contacto-etiqueta {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+
+    border-radius: 30px;
+    background: #fce5ef;
+    color: #b6537e;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.contacto-encabezado h2 {
+    margin: 0 0 18px;
+    color: #a94773;
+
+    font-size: clamp(26px, 4vw, 38px);
+    line-height: 1.25;
+}
+
+.contacto-introduccion {
+    max-width: 590px;
+    margin: 0 auto;
+
+    color: #796673;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.contacto-decoracion {
+    margin-top: 20px;
+    color: #d58aaa;
+    letter-spacing: 4px;
+}
+
+/* MENSAJE PRINCIPAL */
+
+.contacto-mensaje {
+    max-width: 680px;
+    box-sizing: border-box;
+
+    margin: 0 auto 35px;
+    padding: 25px;
+
+    text-align: center;
+    background: #ffffff;
+
+    border: 1px solid #f3d8e4;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(180, 99, 137, 0.07);
+}
+
+.contacto-mensaje-icono {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.contacto-mensaje h3,
+.contacto-contenido h3 {
+    color: #a94773;
+    font-size: 21px;
+    margin: 0 0 14px;
+}
+
+.contacto-mensaje p {
+    color: #796673;
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0 0 12px;
+}
+
+.contacto-mensaje p:last-child {
+    margin-bottom: 0;
+}
+
+/* REDES SOCIALES */
+
+.contacto-contenido {
+    max-width: 520px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.contacto-subtexto {
+    margin: 0 0 22px;
+    color: #8d7784;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* TARJETAS */
+
+.contacto-opcion {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    margin: 0 auto 13px;
+
+    border: 1px solid #f1d1df;
+    border-radius: 16px;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #fff4f8
+    );
+
+    color: #493440;
+    text-align: left;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(180, 99, 137, 0.06);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+
+.contacto-opcion:hover {
+    transform: translateY(-3px);
+    border-color: #dc9bb8;
+    box-shadow: 0 8px 20px rgba(180, 99, 137, 0.14);
+    color: #493440;
+}
+
+.contacto-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 43px;
+    height: 43px;
+
+    border-radius: 13px;
+    background: #fce4ee;
+    color: #ad527b;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    transition: transform 0.25s ease;
+}
+
+.contacto-whatsapp .contacto-icono {
+    background: #e2f5e7;
+    color: #26804a;
+}
+
+.contacto-facebook .contacto-icono {
+    background: #e5edff;
+    color: #2861bd;
+}
+
+.contacto-instagram .contacto-icono {
+    background: #f9e2f0;
+    color: #bd4f89;
+}
+
+.contacto-opcion:hover .contacto-icono {
+    transform: scale(1.08);
+}
+
+.contacto-opcion-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.contacto-opcion-texto strong {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #58364a;
+}
+
+.contacto-opcion-texto small {
+    color: #8d7784;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.contacto-flecha {
+    flex-shrink: 0;
+    margin-left: auto;
+
+    color: #c36d93;
+    font-size: 22px;
+
+    transition: transform 0.25s ease;
+}
+
+.contacto-opcion:hover .contacto-flecha {
+    transform: translate(3px, -3px);
+}
+
+/* INFORMACIÓN ADICIONAL */
+
+.contacto-informacion {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+
+    margin: 35px 0;
+}
+
+.contacto-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 22px 16px;
+
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #f2dbe5;
+    border-radius: 17px;
+
+    text-align: center;
+}
+
+.contacto-info-item > span {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.contacto-info-item h4 {
+    margin: 0 0 10px;
+    color: #a94773;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contacto-info-item p {
+    margin: 0;
+
+    color: #83717c;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* CIERRE */
+
+.contacto-cierre {
+    padding: 28px 20px 10px;
+    border-top: 1px solid #f0d9e4;
+
+    text-align: center;
+}
+
+.contacto-frase {
+    margin: 0 0 12px;
+
+    color: #ad527b;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contacto-cierre p:not(.contacto-frase) {
+    max-width: 480px;
+    margin: 0 auto 22px;
+
+    color: #83717c;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* BOTÓN PRINCIPAL */
+
+.contacto-cta {
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 15px 24px;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #d77fa3,
+        #b95582
+    );
+
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.6;
+
+    box-shadow: 0 5px 15px rgba(185, 85, 130, 0.20);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.contacto-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(185, 85, 130, 0.28);
+    color: #ffffff;
+}
+
+/* ACCESIBILIDAD */
+
+.contacto-opcion:focus-visible,
+.contacto-cta:focus-visible {
+    outline: 3px solid #b95582;
+    outline-offset: 4px;
+}
+
+/* TABLETS Y CELULARES */
+
+@media (max-width: 650px) {
+    .seccion-contacto {
+        margin: 25px auto;
+        padding: 25px 15px;
+        border-radius: 19px;
+    }
+
+    .contacto-introduccion {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .contacto-mensaje {
+        padding: 21px 17px;
+    }
+
+    .contacto-informacion {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contacto-info-item {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 14px;
+
+        padding: 17px;
+        text-align: left;
+    }
+
+    .contacto-info-item > span {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .contacto-info-item h4 {
+        margin-bottom: 5px;
+    }
+
+    .contacto-opcion {
+        gap: 10px;
+        padding: 13px 12px;
+    }
+
+    .contacto-icono {
+        width: 37px;
+        height: 37px;
+        font-size: 21px;
+    }
+
+    .contacto-opcion-texto strong {
+        font-size: 12px;
+    }
+
+    .contacto-opcion-texto small {
+        font-size: 10px;
+    }
+
+    .contacto-cierre {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .contacto-frase {
+        font-size: 18px;
+    }
+
+    .contacto-cta {
+        padding: 13px 18px;
+        font-size: 12px;
+    }
+}
+
+/* RESPETAR MOVIMIENTO REDUCIDO */
+
+@media (prefers-reduced-motion: reduce) {
+    .contacto-opcion,
+    .contacto-icono,
+    .contacto-flecha,
+    .contacto-cta {
+        transition: none;
+    }
+}
+
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}

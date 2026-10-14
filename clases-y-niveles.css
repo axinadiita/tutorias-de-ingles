@@ -1,0 +1,387 @@
+
+/* =================================
+   CLASES Y NIVELES
+================================= */
+
+.clases-section {
+    padding: 85px 0;
+    background: linear-gradient(
+        180deg,
+        #fff7fb 0%,
+        #ffffff 100%
+    );
+    color: #332b33;
+    overflow: hidden;
+}
+
+.clases-encabezado {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.clases-etiqueta {
+    display: inline-block;
+    padding: 9px 16px;
+    background: #fceaf2;
+    color: #bd638d;
+    border: 1px solid #f4d5e3;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.clases-titulo {
+    margin: 22px 0 18px;
+    color: #302832;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.clases-titulo span {
+    color: #d477a1;
+}
+
+.clases-descripcion {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #706670;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.clases-grid {
+    align-items: stretch;
+}
+
+.clase-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 27px;
+    background: #ffffff;
+    border: 1px solid #f0dbe5;
+    border-radius: 23px;
+    box-shadow: 0 10px 30px rgba(164, 101, 132, 0.07);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.clase-card:hover {
+    transform: translateY(-5px);
+    border-color: #e8b6cd;
+    box-shadow: 0 16px 35px rgba(164, 101, 132, 0.13);
+}
+
+.clase-destacada {
+    background: linear-gradient(
+        155deg,
+        #fffafd 0%,
+        #fff1f7 100%
+    );
+    border-color: #eac3d5;
+}
+
+.clase-icono {
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    background: #fff0f6;
+    color: #c76e98;
+    font-size: 25px;
+}
+
+.clase-categoria {
+    margin-bottom: 10px;
+    color: #bd638d;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.clase-card h3 {
+    margin: 0 0 14px;
+    color: #392d38;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.clase-card > p {
+    color: #706670;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.clase-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 25px;
+}
+
+.clase-card li {
+    position: relative;
+    padding: 8px 0 8px 23px;
+    color: #615661;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.clase-card li::before {
+    content: "♡";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #d477a1;
+    font-weight: 700;
+}
+
+.clase-enlace {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 17px;
+    border-top: 1px solid #f1e2e9;
+    color: #b85e88;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.clase-enlace span {
+    font-size: 21px;
+    transition: transform 0.2s ease;
+}
+
+.clase-enlace:hover {
+    color: #914768;
+}
+
+.clase-enlace:hover span {
+    transform: translateX(4px);
+}
+
+/* NIVELES */
+
+.niveles-bloque {
+    margin-top: 100px;
+}
+
+.niveles-encabezado {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.niveles-encabezado h3 {
+    margin: 20px 0 12px;
+    color: #302832;
+    font-family: Georgia, serif;
+    font-size: clamp(27px, 3vw, 36px);
+    font-weight: 700;
+}
+
+.niveles-encabezado p {
+    color: #706670;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.niveles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.nivel-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 0;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #f0dbe5;
+    border-radius: 17px;
+    box-shadow: 0 5px 20px rgba(164, 101, 132, 0.05);
+}
+
+.nivel-letra {
+    flex-shrink: 0;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #fceaf2;
+    color: #b85e88;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.nivel-card h4 {
+    margin: 0 0 6px;
+    color: #483642;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nivel-card p {
+    margin: 0;
+    color: #837580;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.niveles-nota {
+    max-width: 700px;
+    margin: 28px auto 0;
+    color: #96768a;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* TABLETS Y PANTALLAS MEDIANAS */
+
+@media (max-width: 991.98px) {
+    .clases-section {
+        padding: 65px 0;
+    }
+
+    .clase-card {
+        padding: 27px 23px;
+    }
+
+    .niveles-bloque {
+        margin-top: 75px;
+    }
+
+    .niveles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES: ANDROID Y IOS */
+
+@media (max-width: 575.98px) {
+    .clases-section {
+        padding: 48px 0;
+    }
+
+    .clases-encabezado {
+        margin-bottom: 32px;
+    }
+
+    .clases-titulo {
+        font-size: 31px;
+        letter-spacing: -0.5px;
+    }
+
+    .clases-descripcion {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .clase-card {
+        padding: 25px 22px;
+        border-radius: 19px;
+    }
+
+    .clase-card h3 {
+        font-size: 25px;
+    }
+
+    .clase-card > p {
+        font-size: 14px;
+    }
+
+    .clase-card li {
+        font-size: 14px;
+    }
+
+    .niveles-bloque {
+        margin-top: 60px;
+    }
+
+    .niveles-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .nivel-card {
+        padding: 17px;
+    }
+
+    .niveles-encabezado h3 {
+        font-size: 28px;
+    }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+    .clase-card,
+    .clase-enlace span {
+        transition: none;
+    }
+
+    .clase-card:hover {
+        transform: none;
+    }
+}
+
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}

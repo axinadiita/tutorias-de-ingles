@@ -1,0 +1,586 @@
+
+/* =================================
+   PRECIOS Y MATERIAL DE ESTUDIO
+================================= */
+
+.precios-section {
+    padding: 85px 0;
+    background: linear-gradient(180deg, #fff7fb, #ffffff 45%, #fff8fb);
+    color: #332b33;
+    overflow: hidden;
+}
+
+.precios-encabezado {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.precios-etiqueta {
+    display: inline-block;
+    padding: 9px 16px;
+    color: #bd638d;
+    background: #fceaf2;
+    border: 1px solid #f4d5e3;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.precios-titulo {
+    margin: 22px 0 18px;
+    color: #302832;
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.precios-titulo span {
+    color: #d477a1;
+}
+
+.precios-descripcion {
+    max-width: 620px;
+    margin: auto;
+    color: #706670;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* SUBTÍTULOS */
+
+.precios-subtitulo {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin: 0 0 27px;
+}
+
+.precios-numero {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fceaf2;
+    border: 1px solid #f4d5e3;
+    border-radius: 15px;
+    color: #bd638d;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.precios-subtitulo h3 {
+    margin: 0 0 5px;
+    color: #392d38;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.precios-subtitulo p {
+    margin: 0;
+    color: #837580;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* TARJETAS DE PRECIOS */
+
+.precios-grid {
+    align-items: stretch;
+}
+
+.precio-card {
+    height: 100%;
+    min-height: 180px;
+    padding: 25px 13px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #f0dbe5;
+    border-radius: 21px;
+    box-shadow: 0 8px 25px rgba(164, 101, 132, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.precio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(164, 101, 132, 0.12);
+}
+
+.precio-card-destacado {
+    background: linear-gradient(145deg, #fff0f6, #ffffff);
+    border-color: #e7b4ca;
+}
+
+.precio-icono {
+    display: block;
+    margin-bottom: 13px;
+    color: #d477a1;
+    font-size: 24px;
+}
+
+.precio-card h4 {
+    min-height: 40px;
+    margin: 0 0 9px;
+    color: #483642;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.precio-monto {
+    margin: 0;
+    color: #b85e88;
+    font-size: clamp(22px, 2vw, 27px);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.precio-unidad {
+    display: block;
+    margin-top: 5px;
+    color: #837580;
+    font-size: 12px;
+}
+
+/* CONDICIONES */
+
+.precios-condiciones {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 28px;
+    padding: 25px;
+    background: #fff0f6;
+    border: 1px solid #f2d5e2;
+    border-radius: 20px;
+}
+
+.condicion-icono {
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 13px;
+    color: #c76e98;
+    font-size: 22px;
+}
+
+.precios-condiciones h4 {
+    margin: 2px 0 12px;
+    color: #483642;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.precios-condiciones ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #706670;
+}
+
+.precios-condiciones li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.precios-condiciones li:last-child {
+    margin-bottom: 0;
+}
+
+/* MATERIALES */
+
+.material-bloque {
+    margin-top: 85px;
+}
+
+.material-categoria {
+    margin-top: 32px;
+}
+
+.material-categoria h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+    color: #483642;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.material-categoria h4 span {
+    color: #d477a1;
+    font-size: 25px;
+}
+
+.material-intro {
+    margin-bottom: 18px;
+    color: #837580;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.material-lista {
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #f0dbe5;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(164, 101, 132, 0.05);
+}
+
+.material-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 21px 24px;
+    border-bottom: 1px solid #f5e8ee;
+}
+
+.material-item:last-child {
+    border-bottom: none;
+}
+
+.material-info {
+    min-width: 0;
+}
+
+.material-info h5 {
+    margin: 0 0 6px;
+    color: #483642;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.material-info p {
+    margin: 0;
+    color: #837580;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.material-precio {
+    flex-shrink: 0;
+    color: #b85e88;
+    font-size: 16px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* EXTRAS */
+
+.extras-bloque {
+    margin-top: 85px;
+}
+
+.extras-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.extra-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #f0dbe5;
+    border-radius: 20px;
+    box-shadow: 0 7px 23px rgba(164, 101, 132, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.extra-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 13px 28px rgba(164, 101, 132, 0.10);
+}
+
+.extra-icono {
+    margin-bottom: 14px;
+    color: #d477a1;
+    font-size: 25px;
+}
+
+.extra-card h4 {
+    margin: 0 0 9px;
+    color: #483642;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.extra-card p {
+    margin: 0 0 20px;
+    color: #837580;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.extra-precio {
+    margin-top: auto;
+    padding: 8px 13px;
+    color: #b85e88;
+    background: #fff0f6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.extras-nota {
+    margin: 20px 0 0;
+    color: #96768a;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* CIERRE Y CONTACTO */
+
+.precios-cierre {
+    margin-top: 85px;
+    padding: 42px 24px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff0f6, #fff9fc);
+    border: 1px solid #f1d6e2;
+    border-radius: 25px;
+}
+
+.precios-cierre > span {
+    color: #d477a1;
+    font-size: 30px;
+}
+
+.precios-cierre h3 {
+    margin: 14px 0 12px;
+    color: #392d38;
+    font-family: Georgia, serif;
+    font-size: clamp(23px, 3vw, 31px);
+    font-weight: 700;
+}
+
+.precios-cierre p {
+    max-width: 550px;
+    margin: 0 auto 24px;
+    color: #706670;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.precios-boton {
+    display: inline-block;
+    max-width: 100%;
+    padding: 13px 23px;
+    background: linear-gradient(135deg, #f2a8c8, #dc78a5);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(220, 120, 165, 0.20);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.precios-boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(220, 120, 165, 0.30);
+    color: #ffffff;
+}
+
+/* TABLETS */
+
+@media (max-width: 991.98px) {
+    .precios-section {
+        padding: 65px 0;
+    }
+
+    .precio-card {
+        min-height: 165px;
+    }
+
+    .material-bloque,
+    .extras-bloque {
+        margin-top: 65px;
+    }
+}
+
+/* ANDROID, IPHONE Y CELULARES PEQUEÑOS */
+
+@media (max-width: 575.98px) {
+    .precios-section {
+        padding: 48px 0;
+    }
+
+    .precios-encabezado {
+        margin-bottom: 38px;
+    }
+
+    .precios-titulo {
+        font-size: 31px;
+        line-height: 1.25;
+    }
+
+    .precios-descripcion {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .precios-subtitulo {
+        gap: 12px;
+    }
+
+    .precios-numero {
+        width: 42px;
+        height: 42px;
+        border-radius: 13px;
+    }
+
+    .precios-subtitulo h3 {
+        font-size: 22px;
+    }
+
+    .precios-subtitulo p {
+        font-size: 13px;
+    }
+
+    .precio-card {
+        min-height: 150px;
+        padding: 22px 12px;
+    }
+
+    .precio-card h4 {
+        font-size: 14px;
+    }
+
+    .precio-monto {
+        font-size: 25px;
+    }
+
+    .precios-condiciones {
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .precios-condiciones li {
+        font-size: 13px;
+    }
+
+    .material-bloque,
+    .extras-bloque {
+        margin-top: 58px;
+    }
+
+    .material-categoria {
+        margin-top: 28px;
+    }
+
+    .material-categoria h4 {
+        font-size: 18px;
+    }
+
+    .material-item {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 18px 15px;
+    }
+
+    .material-info h5 {
+        font-size: 14px;
+    }
+
+    .material-info p {
+        font-size: 12px;
+    }
+
+    .material-precio {
+        font-size: 14px;
+    }
+
+    .extras-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .extra-card {
+        padding: 22px;
+    }
+
+    .precios-cierre {
+        margin-top: 58px;
+        padding: 32px 19px;
+    }
+
+    .precios-boton {
+        padding: 13px 18px;
+        font-size: 13px;
+    }
+}
+
+/* ACCESIBILIDAD */
+
+@media (prefers-reduced-motion: reduce) {
+    .precio-card,
+    .extra-card,
+    .precios-boton {
+        transition: none;
+    }
+
+    .precio-card:hover,
+    .extra-card:hover,
+    .precios-boton:hover {
+        transform: none;
+    }
+}
+
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}
+

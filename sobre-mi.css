@@ -1,0 +1,288 @@
+
+
+/* =================================
+   SECCIÓN SOBRE MÍ
+================================= */
+
+.sobre-mi {
+    background: #ffffff;
+    color: #332b33;
+    overflow: hidden;
+}
+
+.sobre-mi-etiqueta {
+    display: inline-block;
+    color: #bd638d;
+    background: #fceaf2;
+    border: 1px solid #f4d5e3;
+    border-radius: 50px;
+    padding: 9px 17px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.sobre-mi-titulo {
+    color: #302832;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.sobre-mi-titulo span {
+    color: #d477a1;
+}
+
+.sobre-mi-saludo {
+    color: #b85e88;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.sobre-mi-texto {
+    color: #706670;
+    font-size: 1rem;
+    line-height: 1.95;
+    margin-bottom: 18px;
+}
+
+.sobre-mi-frase {
+    background: #fff6fa;
+    border-left: 3px solid #df91b3;
+    border-radius: 0 12px 12px 0;
+    padding: 18px 22px;
+}
+
+.sobre-mi-frase p {
+    color: #885b73;
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* TARJETA PERSONAL */
+
+.sobre-mi-tarjeta {
+    position: relative;
+    background: linear-gradient(
+        160deg,
+        #fff8fb 0%,
+        #fcebf3 100%
+    );
+    border: 1px solid #f1d9e4;
+    border-radius: 28px;
+    padding: 45px 32px 30px;
+    box-shadow: 0 15px 45px rgba(164, 101, 132, 0.10);
+    text-align: center;
+}
+
+.sobre-mi-decoracion {
+    position: absolute;
+    top: 13px;
+    right: 23px;
+    color: #d477a1;
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.sobre-mi-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #f8d7e5,
+        #e9a4c2
+    );
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(190, 108, 148, 0.15);
+}
+
+.sobre-mi-avatar span {
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.sobre-mi-nombre {
+    color: #392d38;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.sobre-mi-apodo {
+    color: #a16c87;
+    font-size: 0.95rem;
+}
+
+.sobre-mi-separador {
+    width: 55px;
+    height: 2px;
+    background: #dfa0bc;
+    margin: 25px auto;
+}
+
+/* VALORES PERSONALES */
+
+.sobre-mi-dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.sobre-mi-icono {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #c76e98;
+    background: #ffffff;
+    border: 1px solid #f2d6e3;
+    border-radius: 13px;
+    font-size: 20px;
+}
+
+.sobre-mi-dato h4 {
+    color: #483642;
+    font-size: 0.98rem;
+    font-weight: 700;
+    margin: 2px 0 5px;
+}
+
+.sobre-mi-dato p {
+    color: #837580;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sobre-mi-firma {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid #edd6e1;
+    color: #bc6c91;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/* ANIMACIÓN SUAVE */
+
+.sobre-mi-tarjeta {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.sobre-mi-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(164, 101, 132, 0.15);
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 576px) {
+    .sobre-mi-titulo {
+        letter-spacing: -0.5px;
+    }
+
+    .sobre-mi-texto {
+        font-size: 0.96rem;
+        line-height: 1.85;
+    }
+
+    .sobre-mi-tarjeta {
+        padding: 40px 22px 25px;
+        border-radius: 22px;
+    }
+
+    .sobre-mi-frase {
+        padding: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sobre-mi-tarjeta {
+        transition: none;
+    }
+
+    .sobre-mi-tarjeta:hover {
+        transform: none;
+    }
+}
+
+/* FOTO REDONDA DE INA */
+
+.sobre-mi-avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 5px 20px rgba(190, 108, 148, 0.20);
+    background: #f8d7e5;
+}
+
+.sobre-mi-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}

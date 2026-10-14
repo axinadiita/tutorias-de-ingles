@@ -1,0 +1,622 @@
+
+/* =====================================
+   COMUNIDAD KAWAII - TUTORÍAS DE INGLÉS
+===================================== */
+
+.comunidad {
+    --rosa: #e8a0bf;
+    --rosa-oscuro: #b85483;
+    --rosa-claro: #fff0f6;
+    --lila: #eee7ff;
+    --texto: #65465a;
+    --texto-suave: #9b7e91;
+
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 45px auto;
+    padding: 35px 25px;
+
+    border: 2px solid #f7d9e7;
+    border-radius: 30px;
+
+    background:
+        radial-gradient(circle at 8% 8%, #ffe5f0 0, transparent 20%),
+        radial-gradient(circle at 95% 35%, #f0e8ff 0, transparent 22%),
+        linear-gradient(180deg, #fffafd, #fff5fa);
+
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.comunidad-encabezado {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.comunidad-etiqueta {
+    display: inline-block;
+    padding: 9px 17px;
+
+    border: 1px solid #f2c9dc;
+    border-radius: 30px;
+    background: #ffffff;
+
+    color: var(--rosa-oscuro);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.comunidad-encabezado h2 {
+    margin: 20px 0 12px;
+
+    color: var(--rosa-oscuro);
+    font-size: clamp(27px, 5vw, 40px);
+    line-height: 1.3;
+}
+
+.comunidad-encabezado > p {
+    line-height: 1.8;
+}
+
+.comunidad-intro {
+    max-width: 560px;
+    margin: 15px auto;
+
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.comunidad-intro strong {
+    color: var(--rosa-oscuro);
+}
+
+.comunidad-decoracion {
+    margin-top: 22px;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+/* RESUMEN */
+
+.comunidad-resumen {
+    max-width: 600px;
+    box-sizing: border-box;
+    margin: 0 auto 25px;
+    padding: 25px 20px;
+
+    border: 1px solid #f4d2e2;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.88);
+    text-align: center;
+
+    box-shadow: 0 7px 20px rgba(199, 125, 160, 0.08);
+}
+
+.resumen-gatito {
+    font-size: 40px;
+}
+
+.comunidad-resumen h3 {
+    margin: 10px 0;
+    color: var(--rosa-oscuro);
+    font-size: 20px;
+}
+
+.comunidad-resumen > p {
+    color: var(--texto-suave);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.comunidad-estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.estadistica {
+    min-width: 115px;
+    padding: 13px;
+
+    border: 1px solid #f5d8e7;
+    border-radius: 17px;
+    background: #fff5fa;
+}
+
+.estadistica span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: var(--rosa-oscuro);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.estadistica small {
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+.comunidad-resumen .comunidad-privacidad {
+    margin-bottom: 0;
+    color: #b16b91;
+    font-size: 12px;
+}
+
+/* FORMULARIO */
+
+.opinion-formulario {
+    max-width: 650px;
+    box-sizing: border-box;
+    margin: 0 auto 40px;
+    padding: 25px;
+
+    border: 2px solid #f4d5e4;
+    border-radius: 24px;
+
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(190, 113, 151, 0.09);
+}
+
+.formulario-titulo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 25px;
+}
+
+.formulario-titulo > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 17px;
+    background: var(--rosa-claro);
+    font-size: 26px;
+}
+
+.formulario-titulo h3 {
+    margin: 0 0 6px;
+    color: var(--rosa-oscuro);
+    font-size: 21px;
+}
+
+.formulario-titulo p {
+    margin: 0;
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.etiqueta-campo {
+    display: block;
+    margin: 20px 0 10px;
+
+    color: var(--texto);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ESTRELLAS DE 0 A 5 */
+
+.selector-estrellas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.estrella {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+
+    border: 1px solid #f0d5e2;
+    border-radius: 13px;
+
+    background: #fff7fb;
+    color: #d8b5c7;
+
+    font-size: 23px;
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                background 0.2s ease,
+                color 0.2s ease;
+}
+
+.estrella[data-valor="0"] {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.estrella:hover {
+    transform: translateY(-3px);
+    border-color: var(--rosa);
+}
+
+.estrella.seleccionada {
+    background: #ffe8a9;
+    border-color: #f0c75e;
+    color: #d89b15;
+    box-shadow: 0 3px 8px rgba(229, 183, 72, 0.16);
+}
+
+.texto-calificacion {
+    margin: 10px 0 20px;
+    color: var(--rosa-oscuro);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CAMPO DE TEXTO */
+
+#opinion-texto {
+    display: block;
+    width: 100%;
+    min-height: 140px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    border: 1px solid #f0d4e2;
+    border-radius: 16px;
+    outline: none;
+
+    background: #fffbfd;
+    color: var(--texto);
+
+    font: inherit;
+    font-size: 13px;
+    line-height: 1.8;
+
+    resize: vertical;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#opinion-texto:focus {
+    border-color: var(--rosa);
+    box-shadow: 0 0 0 4px #fce8f1;
+}
+
+#opinion-texto::placeholder {
+    color: #c3a8b7;
+}
+
+.contador-caracteres {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 8px;
+    color: var(--texto-suave);
+    font-size: 10px;
+}
+
+/* ANONIMATO */
+
+.casilla-anonima {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin: 22px 0;
+    padding: 14px;
+
+    border-radius: 14px;
+    background: #fff4f9;
+
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.casilla-anonima input {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    margin-top: 2px;
+
+    accent-color: var(--rosa-oscuro);
+}
+
+/* BOTÓN */
+
+.boton-publicar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(135deg, #efaac8, #d77fa9);
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 13px rgba(196, 105, 150, 0.19);
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-publicar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 17px rgba(196, 105, 150, 0.25);
+}
+
+.mensaje-opinion {
+    color: var(--rosa-oscuro);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.nota-comunidad {
+    color: var(--texto-suave);
+    font-size: 10px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* MURAL */
+
+.mural-opiniones {
+    margin-top: 35px;
+}
+
+.mural-titulo {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.mural-titulo h3 {
+    color: var(--rosa-oscuro);
+    font-size: 23px;
+}
+
+.mural-titulo p {
+    color: var(--texto-suave);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.lista-opiniones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.opiniones-vacias {
+    grid-column: 1 / -1;
+    padding: 30px 20px;
+
+    border: 2px dashed #edc5d9;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.opiniones-vacias > span {
+    font-size: 36px;
+}
+
+.opiniones-vacias h4 {
+    color: var(--rosa-oscuro);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.opiniones-vacias p {
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.tarjeta-opinion {
+    min-width: 0;
+    padding: 20px;
+
+    border: 1px solid #f2d9e6;
+    border-radius: 19px;
+
+    background: linear-gradient(145deg, #ffffff, #fff5fa);
+    box-shadow: 0 4px 12px rgba(190, 113, 151, 0.06);
+
+    overflow-wrap: anywhere;
+    animation: aparecer-opinion 0.35s ease;
+}
+
+@keyframes aparecer-opinion {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.opinion-anonima {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 12px;
+
+    color: var(--rosa-oscuro);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.opinion-anonima span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    background: var(--rosa-claro);
+    font-size: 18px;
+}
+
+.opinion-estrellas {
+    margin-bottom: 12px;
+    color: #e4af36;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.opinion-sin-estrellas {
+    color: var(--texto-suave);
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.opinion-contenido {
+    margin: 0;
+
+    color: var(--texto);
+    font-size: 13px;
+    line-height: 1.9;
+
+    white-space: pre-wrap;
+}
+
+.comunidad-pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 35px;
+    padding: 20px 10px;
+
+    border-top: 1px solid #f3d6e4;
+    text-align: center;
+}
+
+.comunidad-pie > span {
+    font-size: 22px;
+}
+
+.comunidad-pie p {
+    color: var(--texto-suave);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.comunidad-pie strong {
+    color: var(--rosa-oscuro);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .comunidad {
+        margin: 25px auto;
+        padding: 25px 14px;
+        border-radius: 22px;
+    }
+
+    .opinion-formulario {
+        padding: 19px 14px;
+    }
+
+    .lista-opiniones {
+        grid-template-columns: 1fr;
+    }
+
+    .comunidad-estadisticas {
+        gap: 10px;
+    }
+
+    .estadistica {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .estrella {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .estrella,
+    .boton-publicar {
+        transition: none;
+    }
+
+    .tarjeta-opinion {
+        animation: none;
+    }
+}
+
+
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}

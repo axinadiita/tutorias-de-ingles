@@ -1,0 +1,231 @@
+/* Estilos CSS para la página de tutorías de inglés */
+
+body {
+    background-color: pink !important; /* Color de fondo rosa */ 
+    color: #333; /* Color de texto legible */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+
+.navbar {
+    background-color: pink; /* Color de fondo rosa para la barra de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-item .nav-link active{
+    margin-right: 1rem; /* Espaciado entre las pestañas */
+    color: #fff; /* Color de texto blanco para las pestañas */
+
+} 
+.navbar-brand {
+    color: #fff; /* Color de texto blanco para la marca */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-link {
+    color: #fff; /* Color de texto blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    font-weight: bold;
+}
+
+.nav-overflow {
+    overflow-x: auto; /* Permite desplazamiento horizontal si las pestañas no caben */
+    -webkit-overflow-scrolling: touch; /* Suaviza el desplazamiento en dispositivos táctiles */
+}
+
+
+
+/* inicio */
+
+.hero-tutorias {
+    background: linear-gradient(
+        180deg,
+        #fff7fb 0%,
+        #ffffff 100%
+    );
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    overflow: hidden;
+}
+
+.hero-etiqueta {
+    display: inline-block;
+    color: #bd638d;
+    background-color: #fce8f1;
+    border: 1px solid #f5d3e2;
+    border-radius: 50px;
+    padding: 9px 18px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hero-titulo {
+    color: #292331;
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+    font-weight: 750;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+}
+
+.hero-titulo span {
+    display: block;
+    color: #d96f9e;
+}
+
+.hero-descripcion {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #68616c;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.btn-solid.theme-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #f2a8c8, #dc78a5);
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(220, 120, 165, 0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-solid.theme-primary:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #e991b8, #ca628f);
+    transform: translateY(-3px);
+    box-shadow: 0 9px 20px rgba(202, 98, 143, 0.3);
+}
+
+.btn-secundario {
+    display: inline-block;
+    color: #b95783;
+    background-color: #ffffff;
+    border: 1px solid #e8a0bf;
+    border-radius: 30px;
+    padding: 14px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secundario:hover {
+    background-color: #fce8f1;
+    color: #963e68;
+    transform: translateY(-2px);
+}
+
+.hero-nota {
+    color: #91818d;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== CELULARES ===== */
+
+@media (max-width: 576px) {
+    .hero-tutorias {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .hero-titulo {
+        letter-spacing: -0.7px;
+    }
+
+    .hero-descripcion {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-botones a {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .hero-etiqueta {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aplicamos un modelo de tamaño más predecible */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* El título se adapta al ancho disponible */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 1rem;
+    overflow-wrap: break-word;
+}
+
+/* Las pestañas pueden pasar a otra línea */
+.nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+/* Los enlaces son más cómodos de tocar */
+.nav-tabs .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajustes para teléfonos */
+@media (max-width: 480px) {
+    .nav-tabs .nav-link {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
